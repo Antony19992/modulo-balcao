@@ -10,6 +10,7 @@ import { MenuModule } from 'primeng/menu';
 import { MegaMenuModule } from 'primeng/megamenu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,

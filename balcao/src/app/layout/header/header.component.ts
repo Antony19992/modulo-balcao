@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -12,80 +12,66 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-          label: 'File',
-          icon: 'pi pi-fw pi-file',
+          label: 'Atendimento',
+          icon: PrimeIcons.AMAZON,
           items: [
               {
-                  label: 'New',
-                  icon: 'pi pi-fw pi-plus',
-                  items: [
-                      {
-                          label: 'Bookmark',
-                          icon: 'pi pi-fw pi-bookmark'
-                      },
-                      {
-                          label: 'Video',
-                          icon: 'pi pi-fw pi-video'
-                      }
-                  ]
+                  label: 'Fechar/Abrir caixa',
+                  icon: PrimeIcons.PLUS
               },
               {
-                  label: 'Delete',
+                  label: 'Área de venda',
                   icon: 'pi pi-fw pi-trash'
-              },
-              {
-                  separator: true
-              },
-              {
-                  label: 'Export',
-                  icon: 'pi pi-fw pi-external-link'
               }
           ]
       },
       {
-          label: 'Edit',
+          label: 'Caixa',
           icon: 'pi pi-fw pi-pencil',
           items: [
               {
-                  label: 'Left',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-align-left'
               },
               {
-                  label: 'Right',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-align-right'
               },
               {
-                  label: 'Center',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-align-center'
               },
               {
-                  label: 'Justify',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-align-justify'
               }
           ]
       },
       {
-          label: 'Users',
+          label: 'Usuários',
           icon: 'pi pi-fw pi-user',
           items: [
               {
-                  label: 'New',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-user-plus'
               },
               {
-                  label: 'Delete',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-user-minus'
               },
               {
-                  label: 'Search',
+                separator: true
+              },
+              {
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-users',
                   items: [
                       {
-                          label: 'Filter',
+                          label: 'Em breve',
                           icon: 'pi pi-fw pi-filter',
                           items: [
                               {
-                                  label: 'Print',
+                                  label: 'Em breve',
                                   icon: 'pi pi-fw pi-print'
                               }
                           ]
@@ -99,29 +85,29 @@ export class HeaderComponent implements OnInit {
           ]
       },
       {
-          label: 'Events',
+          label: 'Em breve',
           icon: 'pi pi-fw pi-calendar',
           items: [
               {
-                  label: 'Edit',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-pencil',
                   items: [
                       {
-                          label: 'Save',
+                          label: 'Em breve',
                           icon: 'pi pi-fw pi-calendar-plus'
                       },
                       {
-                          label: 'Delete',
+                          label: 'Em breve',
                           icon: 'pi pi-fw pi-calendar-minus'
                       }
                   ]
               },
               {
-                  label: 'Archieve',
+                  label: 'Em breve',
                   icon: 'pi pi-fw pi-calendar-times',
                   items: [
                       {
-                          label: 'Remove',
+                          label: 'Em breve',
                           icon: 'pi pi-fw pi-calendar-minus'
                       }
                   ]
@@ -129,7 +115,7 @@ export class HeaderComponent implements OnInit {
           ]
       },
       {
-          label: 'Quit',
+          label: 'Sair',
           icon: 'pi pi-fw pi-power-off'
       }
   ];
